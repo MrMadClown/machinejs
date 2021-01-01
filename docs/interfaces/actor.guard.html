@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Machine | machinejs</title>
+	<title>Guard | machinejs</title>
 	<meta name="description" content="Documentation for machinejs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,27 +55,63 @@
 					<a href="../modules.html">machinejs</a>
 				</li>
 				<li>
-					<a href="machine.html">Machine</a>
+					<a href="../modules/actor.html">Actor</a>
+				</li>
+				<li>
+					<a href="actor.guard.html">Guard</a>
 				</li>
 			</ul>
-			<h1>Module Machine</h1>
+			<h1>Interface Guard</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Guard</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="actor.guardedaction.html" class="tsd-signature-type" data-tsd-kind="Interface">GuardedAction</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/machine.machine-1.html" class="tsd-kind-icon">Machine</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="actor.guard.html#can" class="tsd-kind-icon">can</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="can" class="tsd-anchor"></a>
+					<h3>can</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">can<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mrmadclown/machinejs/blob/9220a62/src/Actor.ts#L10">Actor.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -85,42 +121,63 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="actor.html">Actor</a>
-					</li>
 					<li class="current tsd-kind-module">
-						<a href="machine.html">Machine</a>
+						<a href="../modules/actor.html">Actor</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_actionstate.html">Node/<wbr>Action<wbr>State</a>
+						<a href="../modules/machine.html">Machine</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_basenode.html">Node/<wbr>Base<wbr>Node</a>
+						<a href="../modules/node_actionstate.html">Node/<wbr>Action<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_definition.html">Node/<wbr>Definition</a>
+						<a href="../modules/node_basenode.html">Node/<wbr>Base<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_parent.html">Node/<wbr>Parent</a>
+						<a href="../modules/node_definition.html">Node/<wbr>Definition</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_pointer.html">Node/<wbr>Pointer</a>
+						<a href="../modules/node_parent.html">Node/<wbr>Parent</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_state.html">Node/<wbr>State</a>
+						<a href="../modules/node_pointer.html">Node/<wbr>Pointer</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_strategynode.html">Node/<wbr>Strategy<wbr>Node</a>
+						<a href="../modules/node_state.html">Node/<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="node_transition.html">Node/<wbr>Transition</a>
+						<a href="../modules/node_strategynode.html">Node/<wbr>Strategy<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/node_transition.html">Node/<wbr>Transition</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/machine.machine-1.html" class="tsd-kind-icon">Machine</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="actor.action.html" class="tsd-kind-icon">Action</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="actor.guard.html" class="tsd-kind-icon">Guard</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="actor.guard.html#can" class="tsd-kind-icon">can</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="actor.guardedaction.html" class="tsd-kind-icon">Guarded<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/actor.html#actor-1" class="tsd-kind-icon">Actor</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/actor.html#isguard" class="tsd-kind-icon">is<wbr>Guard</a>
 					</li>
 				</ul>
 			</nav>
@@ -137,10 +194,11 @@
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
