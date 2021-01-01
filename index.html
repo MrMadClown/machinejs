@@ -2,62 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>Machine.js</title>
-
-    <script type="text/javascript" src="base.js"></script>
-    <script type="text/javascript" src="machine.js"></script>
-    <script type="text/javascript" src="demo.js"></script>
+    <script type="text/javascript" src="dist/demo.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="shortcut icon" type="image/x-png" href="favicon.png" />
-
-    <script type="text/javascript">
-      // the json that defines the trees that control the actors
-      var oakJson = {
-          identifier: "idle", strategy: "prioritised",
-          children: [
-              {
-                  identifier: "photosynthesise", strategy: "sequential",
-                  children: [
-                      { identifier: "makeEnergy" },
-                      { identifier: "grow" },
-                      { identifier: "emitOxygen" },
-                  ]
-              },
-              { identifier: "gatherSun" },
-              { identifier: "gatherWater" },
-          ]
-      };
-
-      var landscapeJson = {
-          identifier: "idle", strategy: "sequential",
-          children: [
-              { identifier: "shine" },
-              { identifier: "rain" },
-          ]
-      };
-
-      // set up the actors
-      var landscape = new Landscape(); // one actor
-      var oak = new Oak(landscape); // the other actor in this drama
-
-      // make instance of Machine and get the root nodes for each actor
-      var machine = new Machine();
-      oak.state = machine.generateTree(oakJson, oak, Oak.states);
-      landscape.state = machine.generateTree(landscapeJson, landscape, Landscape.states);
-
-      // every second, something happens in the ecosystem
-      setTimeout("step()", 1000);
-      var step = function() {
-          // trigger the next state transitions
-          oak.state = oak.state.tick();
-          landscape.state = landscape.state.tick();
-
-          console.log("Oak:       ", oak.state.identifier, "|", oak.height, "m tall |", oak.water, "water |", oak.sun, "sun");
-          console.log("Landscape: ", landscape.state.identifier, "|", landscape.groundwater, "groundwater");
-          console.log("")
-
-          setTimeout("step()", 1000);
-      }
-    </script>
   </head>
   <body>
     <h1>Machine.js</h1>

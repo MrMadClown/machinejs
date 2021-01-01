@@ -1,0 +1,33 @@
+{
+  "name": "machinejs",
+  "version": "1.0.0",
+  "description": "Make behaviour trees in JavaScript",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmadclown/machinejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmadclown/machinejs/issues"
+  },
+  "homepage": "https://github.com/mrmadclown/machinejs#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.2",
+    "typedoc": "^0.20.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.19",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4"
+  }
+}

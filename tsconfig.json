@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "downlevelIteration": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.promise",
+      "scripthost",
+      "es2015.collection"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "typeRoots": [],
+  "types": []
+}
