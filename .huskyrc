@@ -1,0 +1,6 @@
+{
+    "hooks": {
+      "pre-commit": "typedoc src",
+      "pre-push": "npm test",
+    }
+}
