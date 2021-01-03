@@ -1,7 +1,8 @@
-import {BaseNode, Strategy, Node} from "./BaseNode";
 import {Action} from "../Actor";
 import {Parent} from "./Parent";
 import {StrategyNode} from "./StrategyNode";
+import {Strategy} from "../Strategy";
+import {Node} from "./Node";
 
 export class ActionState extends StrategyNode {
   protected action: Action;

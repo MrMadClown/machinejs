@@ -1,7 +1,8 @@
-import {Node, Strategy} from "./BaseNode";
 import {Guard} from "../Actor";
 import {Parent} from "./Parent";
 import {StrategyNode} from "./StrategyNode";
+import {Strategy} from "../Strategy";
+import {Node} from "./Node";
 
 /**
  *  A normal state in the tree.

@@ -2,7 +2,7 @@ import {Pointer} from "./Node/Pointer";
 import {State} from "./Node/State";
 import {Action, Actor, Guard} from "./Actor";
 import {NodeDefinition, isPointerNodeDefinition, isTransitionNodeDefinition} from "./Node/Definition";
-import {Node} from "./Node/BaseNode";
+import {Node} from "./Node/Node";
 import {ActionState} from "./Node/ActionState";
 import {Parent} from "./Node/Parent";
 

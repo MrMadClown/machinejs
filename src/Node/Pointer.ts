@@ -1,8 +1,9 @@
-import {Node, Strategy} from "./BaseNode";
 import {Transition} from "./Transition";
 import {Parent} from "./Parent";
 import {StrategyNode} from "./StrategyNode";
 import {Guard} from "../Actor";
+import {Strategy} from "../Strategy";
+import {Node} from "./Node";
 
 /**
  * A pointer state in the tree.  Directs the actor to a synonymous state

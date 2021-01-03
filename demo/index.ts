@@ -1,7 +1,7 @@
 import {LandScape, LandScapeActor, LandScapeStates} from "./LandScape";
 import {Oak, OakActor, OakStates} from "./Oak";
 import {Machine} from "../src/Machine";
-import {Strategy} from "../src/Node/BaseNode";
+import {Strategy} from "../src/Strategy";
 
 // the json that defines the trees that control the actors
 const oakJson = {

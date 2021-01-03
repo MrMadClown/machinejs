@@ -1,5 +1,5 @@
-import {Node} from "../src/Node/BaseNode";
-import {Action, GuardedAction} from "../src/Actor";
+import {Node} from "../src/Node/Node";
+import {GuardedAction} from "../src/Actor";
 
 export enum LandScapeStates {
   idle = 'idle',

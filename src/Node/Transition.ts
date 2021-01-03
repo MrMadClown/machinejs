@@ -1,4 +1,4 @@
-import {Node} from "./BaseNode";
+import {Node} from "./Node";
 
 export interface Transition extends Node {
   transition(): Node | null;

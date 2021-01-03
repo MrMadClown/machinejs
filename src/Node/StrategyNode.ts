@@ -1,6 +1,8 @@
-import {BaseNode, Node, Strategy} from "./BaseNode";
+import {Node} from "./Node";
+import {BaseNode} from "./BaseNode";
 import {Action, Guard} from "../Actor";
 import {Parent} from "./Parent";
+import {Strategy} from "../Strategy";
 
 export interface NodeWithStrategy extends Node {
   readonly _strategy: Strategy | undefined | null;

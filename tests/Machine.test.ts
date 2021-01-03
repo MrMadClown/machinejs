@@ -1,7 +1,7 @@
 import {Machine} from '../src/Machine';
-import {Strategy} from "../src/Node/BaseNode";
+import {Strategy} from "../src/Strategy";
 import {State} from "../src/Node/State";
-import {GuardedAction} from "../src/Actor";
+import {Guard, GuardedAction} from "../src/Actor";
 import {ActionState} from "../src/Node/ActionState";
 
 describe('read', function () {
@@ -20,7 +20,7 @@ describe('read', function () {
     };
 
     interface Breather {
-      [BreathingStates.idle]: null;
+      [BreathingStates.idle]: Guard;
       [BreathingStates.breathe]: GuardedAction;
     }
 
@@ -28,8 +28,11 @@ describe('read', function () {
       can: jest.fn(() => true),
       run: jest.fn(),
     };
+    const guard: Guard = {
+      can: jest.fn(() => true),
+    };
     const actor = {
-      idle: null,
+      [BreathingStates.idle]: guard,
       [BreathingStates.breathe]: action
     } as Breather;
     const machine = new Machine();
@@ -38,6 +41,9 @@ describe('read', function () {
 
     expect(idle).toBeInstanceOf(State);
     expect(idle.identifier).toBe('idle');
+
+    // @ts-ignore
+    expect(guard.can.mock.calls.length).toBe(1);
 
     const breathing = idle.tick();
 

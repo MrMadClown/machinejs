@@ -1,4 +1,4 @@
-import {Strategy} from "./BaseNode";
+import {Strategy} from "../Strategy";
 
 export type NodeDefinition<States> = {
   readonly identifier: States;

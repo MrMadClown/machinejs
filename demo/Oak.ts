@@ -1,6 +1,6 @@
-import {GuardedAction, Action, Actor} from "../src/Actor";
+import {GuardedAction} from "../src/Actor";
 import {LandScape} from "./LandScape";
-import {Node} from "../src/Node/BaseNode";
+import {Node} from "../src/Node/Node";
 
 export enum OakStates {
   idle = 'idle',

@@ -1,4 +1,4 @@
-import {Node} from "./BaseNode";
+import {Node} from "./Node";
 import {NodeWithStrategy} from "./StrategyNode";
 
 export interface Parent extends NodeWithStrategy {

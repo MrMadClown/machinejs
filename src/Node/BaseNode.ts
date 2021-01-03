@@ -2,27 +2,8 @@ import {Action, Guard, isGuard} from "../Actor";
 import {transition} from "./Transition";
 import {Parent} from "./Parent";
 import {isNodeWithStrategy, NodeWithStrategy} from "./StrategyNode";
-
-export enum Strategy {
-  hereditary = 'hereditary',
-  prioritised = 'prioritised',
-  sequential = 'sequential',
-}
-
-type TestFN = (node: Node) => boolean;
-type AssertFN<N extends Node> = (node: Node) => node is N;
-
-export interface Node {
-  readonly identifier: string;
-
-  tick(): Node;
-
-  can(): boolean;
-
-  getRootNode(): Parent;
-
-  nearestAncestor<N extends Node>(test: TestFN | AssertFN<N>): N | null
-}
+import {Strategy} from "../Strategy";
+import {AssertFN, Node, TestFN} from "./Node";
 
 /**
  * The object for nodes in the tree.
