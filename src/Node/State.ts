@@ -1,4 +1,4 @@
-import {BaseNode, Node, Strategy} from "./BaseNode";
+import {Node, Strategy} from "./BaseNode";
 import {Guard} from "../Actor";
 import {Parent} from "./Parent";
 import {StrategyNode} from "./StrategyNode";
@@ -8,19 +8,19 @@ import {StrategyNode} from "./StrategyNode";
  */
 export class State extends StrategyNode implements Parent {
   protected action: Guard | null;
-  protected children: Array<BaseNode>;
+  protected children: Array<Node>;
   public readonly parent: Parent | undefined;
 
-  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy) {
+  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy|null) {
     super(identifier, action, parent, strategy);
     this.children = [];
   }
 
-  public addChild(node: BaseNode): void {
+  public addChild(node: Node): void {
     this.children.push(node);
   }
 
-  public getChildren(): Array<BaseNode> {
+  public getChildren(): Array<Node> {
     return this.children;
   }
 

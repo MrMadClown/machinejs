@@ -2,7 +2,7 @@ import {Pointer} from "./Node/Pointer";
 import {State} from "./Node/State";
 import {Action, Actor, Guard} from "./Actor";
 import {NodeDefinition, isPointerNodeDefinition, isTransitionNodeDefinition} from "./Node/Definition";
-import {BaseNode} from "./Node/BaseNode";
+import {Node} from "./Node/BaseNode";
 import {ActionState} from "./Node/ActionState";
 import {Parent} from "./Node/Parent";
 
@@ -15,7 +15,7 @@ export class Machine {
     return this.read<ActorInterface>(treeJson, null, actor);
   }
 
-  protected read<ActorInterface>(subTreeJson: NodeDefinition<keyof ActorInterface>, parent: Parent | null, actor: Actor<ActorInterface>): BaseNode {
+  protected read<ActorInterface>(subTreeJson: NodeDefinition<keyof ActorInterface>, parent: Parent | null, actor: Actor<ActorInterface>): Node {
     if (isPointerNodeDefinition(subTreeJson)) {
       return new Pointer(
         subTreeJson.identifier.toString(),
@@ -42,6 +42,7 @@ export class Machine {
       subTreeJson.identifier.toString(),
       actor[subTreeJson.identifier] as Action,
       parent,
+      subTreeJson.strategy,
     );
   }
 }

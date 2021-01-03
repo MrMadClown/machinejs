@@ -13,7 +13,7 @@ export class Pointer extends StrategyNode implements Transition {
   protected action: Guard | null;
   public readonly parent: Parent;
 
-  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy) {
+  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy | null) {
     super(identifier, action, parent, strategy);
   }
 

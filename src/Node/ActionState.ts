@@ -1,13 +1,14 @@
 import {BaseNode, Strategy, Node} from "./BaseNode";
 import {Action} from "../Actor";
 import {Parent} from "./Parent";
+import {StrategyNode} from "./StrategyNode";
 
-export class ActionState extends BaseNode {
+export class ActionState extends StrategyNode {
   protected action: Action;
   public readonly parent: Parent;
 
-  public constructor(identifier: string, action: Action, parent: Parent) {
-    super(identifier, action, parent);
+  public constructor(identifier: string, action: Action, parent: Parent, strategy?: Strategy | null) {
+    super(identifier, action, parent, strategy);
   }
 
   public tick(): Node {
