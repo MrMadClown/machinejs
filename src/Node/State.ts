@@ -11,7 +11,7 @@ export class State extends StrategyNode implements Parent {
   protected children: Array<Node>;
   public readonly parent: Parent | undefined;
 
-  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy|null) {
+  public constructor(identifier: string, action: Guard | null, parent?: Parent, strategy?: Strategy | null) {
     super(identifier, action, parent, strategy);
     this.children = [];
   }

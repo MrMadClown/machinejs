@@ -11,7 +11,7 @@ export function isNodeWithStrategy(node: any): node is NodeWithStrategy {
 }
 
 export class StrategyNode extends BaseNode {
-  public readonly _strategy: Strategy | undefined;
+  public readonly _strategy: Strategy | undefined | null;
 
   public constructor(identifier: string, action: Action | Guard, parent?: Parent, strategy?: Strategy | null) {
     super(identifier, action, parent);
