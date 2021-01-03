@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>machinejs</title>
+	<title>Strategy | machinejs</title>
 	<meta name="description" content="Documentation for machinejs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">machinejs</a>
+					<a href="../index.html" class="title">machinejs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,100 +50,84 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>machinejs</h1>
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">machinejs</a>
+				</li>
+				<li>
+					<a href="strategy.html">Strategy</a>
+				</li>
+			</ul>
+			<h1>Module Strategy</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<p>#Machine.js
-				Make behaviour trees in JavaScript</p>
-				<p>v1.1 [see changelog]</p>
-				<p>By mary rose cook</p>
-				<ul>
-					<li><a href="http://maryrosecook.com">http://maryrosecook.com</a></li>
-					<li><a href="mailto:maryrosecook@maryrosecook.com">maryrosecook@maryrosecook.com</a></li>
-				</ul>
-				<p>##What is Machine.js?</p>
-				<p>Machine.js lets you use a hierarchical state machine to control a JavaScript object.</p>
-				<ul>
-					<li><p>Define a behaviour tree as JSON.</p>
-						<pre><code>{
-      identifier: "idle", strategy: "prioritised",
-      children: [
-          {
-              identifier: "photosynthesise", strategy: "sequential",
-              children: [
-                  { identifier: "makeEnergy" },
-                  { identifier: "grow" },
-                  { identifier: "emitOxygen" },
-              ]
-          },
-          { identifier: "gatherSun" },
-          { identifier: "gatherWater" },
-      ]
-  };
-  </code></pre>
-					</li>
-					<li><p>For each leaf state, define a function that enacts the behaviour for that state.  So, for the gatherSun state, define a function that gathers sun.</p>
-					</li>
-					<li><p>For each state, define a can function that returns true if the actor may move to that state.  So, for the gatherSun state, define a function canGatherSun that returns true if the sun is out.</p>
-					</li>
-				</ul>
-				<p>##Licence</p>
-				<p>The code is open source, under the MIT licence.  It uses Base.js by Dean Edwards.</p>
-				<p>##Getting started</p>
-				<p>Download the repository.  Open index.html in your browser to see the demo and documentation.</p>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/strategy.strategy-1.html" class="tsd-kind-icon">Strategy</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" ">
-						<a href="modules.html">Exports</a>
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/actor.html">Actor</a>
+						<a href="actor.html">Actor</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/machine.html">Machine</a>
+						<a href="machine.html">Machine</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_actionstate.html">Node/<wbr>Action<wbr>State</a>
+						<a href="node_actionstate.html">Node/<wbr>Action<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_basenode.html">Node/<wbr>Base<wbr>Node</a>
+						<a href="node_basenode.html">Node/<wbr>Base<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_definition.html">Node/<wbr>Definition</a>
+						<a href="node_definition.html">Node/<wbr>Definition</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_node.html">Node/<wbr>Node</a>
+						<a href="node_node.html">Node/<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_parent.html">Node/<wbr>Parent</a>
+						<a href="node_parent.html">Node/<wbr>Parent</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_pointer.html">Node/<wbr>Pointer</a>
+						<a href="node_pointer.html">Node/<wbr>Pointer</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_state.html">Node/<wbr>State</a>
+						<a href="node_state.html">Node/<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_strategynode.html">Node/<wbr>Strategy<wbr>Node</a>
+						<a href="node_strategynode.html">Node/<wbr>Strategy<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/node_transition.html">Node/<wbr>Transition</a>
+						<a href="node_transition.html">Node/<wbr>Transition</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/strategy.html">Strategy</a>
+					<li class="current tsd-kind-module">
+						<a href="strategy.html">Strategy</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/strategy.strategy-1.html" class="tsd-kind-icon">Strategy</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -175,6 +159,6 @@
 	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
