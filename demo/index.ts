@@ -2,9 +2,10 @@ import {LandScape, LandScapeActor, LandScapeStates} from "./LandScape";
 import {Oak, OakActor, OakStates} from "./Oak";
 import {Machine} from "../src/Machine";
 import {Strategy} from "../src/Strategy";
+import {TransitionNodeDefinition} from "../src/Node/Definition";
 
 // the json that defines the trees that control the actors
-const oakJson = {
+const oakJson:TransitionNodeDefinition<keyof OakActor> = {
   identifier: OakStates.idle, strategy: Strategy.prioritised,
   children: [
     {

@@ -6,7 +6,7 @@ export type NodeDefinition<States> = {
 }
 
 export type TransitionNodeDefinition<States> = NodeDefinition<States> & {
-  readonly children: Array<NodeDefinition<States>>;
+  readonly children: Array<NodeDefinition<States> | PointerNodeDefinition<States> | TransitionNodeDefinition<States>>;
 }
 export type PointerNodeDefinition<States> = NodeDefinition<States> & {
   readonly pointer: boolean;
